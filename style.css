@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+    margin: 0px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar{
+    border-bottom: 1px;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    background-color: yellow;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.nav-list{
+    margin: 0 30px 0 0;
+}
+.nav-list a{
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+.nav-list a:hover{
+    text-decoration: underline;
+}
+
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+
+.container{
+    display: grid;
+
+}
+.header{
+    display: grid;
+    margin: 50px;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero{
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(/img/pisangfree.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero > *{
+    /* display: none; */
+    color: yellow;
+    text-shadow: 2px 2px black;
+    
+}
+
+.features{
+    background-color: black;
+    color: yellow;
+    display: grid;
+    /* justify-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.feature-1{
+    grid-area: feature-1;
+    background-image: url(/img/pisangcoklat.png);
+    background-size: cover;
+}
+
+.feature-2{
+    grid-area: feature-2;
+    background-image: url(/img/pisangkeju.png);
+    background-size: cover;
+}
+
+.features .price{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about{
+    padding: 50px;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-list{
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: yellow;
+    }
+    .nav-list a{
+        display: block;
+        border-bottom: 1px;
+        margin: 0;
+    }
+    #toggle:checked + .nav-list{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        grid-template-areas: 
+        'hero'
+        'feature-1'
+        'feature-2'
+        ;
+    }
+}
