@@ -154,6 +154,56 @@ label{
     grid-column: 2 / 3 span;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    padding: 10px 0;
+}
+.footer .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    align-items: center;
+  }
+
+.footer .button:hover{
+    width: 200px;
+  }
+
+.footer .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+
+.footer .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+
+.footer.button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+
+.footer .button:hover .icon i{
+    color: #fff;
+  }
+
+
 @media only screen and (max-width: 768px){
     label{
         display: block;
