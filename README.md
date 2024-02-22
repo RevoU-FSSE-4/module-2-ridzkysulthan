@@ -26,4 +26,4 @@ Selamat datang di website yang berisi latihan dasar membuat HTML,tujuan dibuatny
 
 ## 🌐 Link Assignment 1 module 2
 
-[Menuju Website]()
+[Menuju Website](https://module-2-ridzkysulthan.netlify.app/)
