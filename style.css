@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 body{
@@ -153,6 +153,48 @@ label{
     grid-row: 1;
     grid-column: 2 / 3 span;
 }
+
+.menu{
+    margin: 50px;
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.flex-container figure {
+    margin-left: auto;
+}
+
+.flex-container figure img {
+    /* height: 400px; */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.flex-container.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-container.row-reverse p {
+    margin-left: 32px;
+}
+
+.flex-container.row-reverse figure {
+    margin-left: 40px;
+    min-width: 320px;
+}
+
+ul {
+    list-style-type: upper-roman;
+}
+
+
+
+
+
+
 
 .footer{
     display: flex;
