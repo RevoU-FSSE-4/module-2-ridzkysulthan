@@ -170,9 +170,36 @@ label{
 .flex-container figure img {
     /* height: 400px; */
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
 }
+
+
+.flex-container figure picture img:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
 .flex-container.row-reverse {
     flex-direction: row-reverse;
 }
@@ -185,16 +212,6 @@ label{
     margin-left: 40px;
     min-width: 320px;
 }
-
-ul {
-    list-style-type: upper-roman;
-}
-
-
-
-
-
-
 
 .footer{
     display: flex;
@@ -214,11 +231,11 @@ ul {
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease-out;
     align-items: center;
-  }
+}
 
 .footer .button:hover{
     width: 200px;
-  }
+}
 
 .footer .button .icon{
     display: inline-block;
@@ -229,21 +246,21 @@ ul {
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
+}
 
 .footer .button:nth-child(1):hover .icon{
     background: #4267B2;
-  }
+}
 
 .footer.button .icon i{
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
+}
 
 .footer .button:hover .icon i{
     color: #fff;
-  }
+}
 
 
 @media only screen and (max-width: 768px){
