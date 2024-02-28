@@ -213,6 +213,58 @@ label{
     min-width: 320px;
 }
 
+.contact{
+    padding: 50px;
+}
+form {
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: yellow;
+    padding: 20px;
+    gap: 20px;
+}
+    
+    .inputbox {
+    width: 45%;
+}
+    
+    .inputbox input {
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 0 10px;
+    text-transform: none;
+}
+    
+    .inputbox select {
+    background-color: #fff;
+    color: rgb(134, 127, 127);
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+    
+    textarea {
+    font-size: auto;
+    letter-spacing: 1px;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    text-transform: none;
+}
 .footer{
     display: flex;
     justify-content: center;
