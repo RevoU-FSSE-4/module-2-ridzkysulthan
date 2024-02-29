@@ -1,6 +1,7 @@
 *{
     margin: 0;
     /* padding: 0; */
+    box-sizing: border-box;
 }
 
 body{
@@ -13,36 +14,45 @@ body{
     font-style: normal;
 }
 
-.navbar{
-    border-bottom: 1px;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
+nav {
     background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
-.logo{
-    color: black;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
 }
-.nav-list{
-    margin: 0 30px 0 0;
+
+nav div img {
+    width: 50px;
 }
-.nav-list a{
-    clear: right;
+
+nav ul li a {
     text-decoration: none;
-    color: black;
-    margin: 0 10px;
-    line-height: 70px;
+    /* font-family: "Segoe UI", sans-serif; */
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
 }
 
-.nav-list a:hover{
-    text-decoration: underline;
+nav ul li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.menu-icon {
+    font-size: 28px;
+    display: none;
 }
 
 
@@ -316,6 +326,31 @@ form {
 
 
 @media only screen and (max-width: 768px){
+    nav {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul li:last-of-type {
+        padding-bottom: 8px;
+    }
+    
+    nav ul.hidden {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
     label{
         display: block;
         cursor: pointer;
@@ -361,5 +396,4 @@ form {
         grid-column: 1 / 2 span;
         grid-row: 2;
     }
-
 }

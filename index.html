@@ -9,20 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="icon" type="x-icon" href="/img/Logobaru.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>APM Pisang</title>
 </head>
 <body>
-    <nav class="navbar">
-        <label for="toggle">&#9776</label>
-        <input type="checkbox" id="toggle">
-        <div class="nav-list">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Contact</a>
-        </div>
-    </nav>
+        <nav>
+            <div class="">
+            <img src="./img/Logobaru.png" alt="my-logo" />
+            </div>
+            <div id="menu-icon" class="menu-icon">
+            <i class="fa fa-bars"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            </ul>
+        </nav>
+
 
 <div class="container">
     <header class="header">
@@ -126,7 +142,7 @@
                     ></textarea>
                 </div>
                 <div class="submit-btn" id="contactUs">
-                    <button class="btn">book now</button>
+                    <button class="btn">Submit</button>
                 </div>
                 </form>
         </section>
@@ -141,10 +157,8 @@
                     </div>
             </div>
         </footer>
-    
     </main>
-
-
 </div>
+<script src="./src/script.js"></script>
 </body>
 </html>
